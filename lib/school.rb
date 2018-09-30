@@ -15,4 +15,11 @@ class School
   def grade(grade)
     return @roster[grade]
   end 
+  
+  def sort 
+    hash = {}
+    @roster.each {|k,v| hash[k] = v.sort}
+    hash
+  end
+    
 end 
